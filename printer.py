@@ -106,7 +106,7 @@ class Printer():
         if orders:
             for data in orders:
                 # Change the remind status if the order infomation has been printed
-                requests.get('http://yii.kuaxiango.com/api/web/v1/notify/received',
+                requests.get('***********************************url',
                              {'order_id': data['order_id']})
                 for i in range(2):
                     html = Printer().printFormat(**data)
